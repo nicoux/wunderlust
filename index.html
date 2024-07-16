@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,17 @@
 </head>
 <body>
   <header>
+    <div>
+      <a href="#main">Skip to Main</a>
+    </div>
     <h1>Wunderlust Travel</h1>
-    <!-- Note: fix this to use logo L and logo M -->
-    <img src="images/logo-S.png" alt="">
+    <!-- wunderlust logo -->
+    <picture>
+      <source media="(max-width: 675px)" srcset="images/logo-S.png">
+      <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/logo-M.png">
+      <source media="(min-width: 1264px)" srcset="images/logo-L.png">
+      <img src="images/logo-S.png" alt="wunderlust logo with trees, waves of water and a sun">
+    </picture>
     <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
     <nav>
       <ul>
@@ -20,15 +29,34 @@
     </nav>
   </header>
   
-  <main>
+  <main id="#main">
     <!-- Majorca Section -->
     <section id="majorca">
       <h2>Majorca</h2>
       <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-      <!-- Note: fix these images to use the large and medium options -->
-      <img src="images/majorca-waves-S.png" alt="">
-      <img src="images/majorca-beach-S.png" alt="">
-      <img src="images/majorca-cove-S.png" alt="">
+       <!-- waves picture -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/majorca-waves-S">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-waves-M">
+        <source media="(min-width: 1264px)" srcset="images/majorca-waves-L">
+        <img src="images/majorca-waves-S.png" alt="landscape photograph of majorca waves">
+      </picture>
+
+      <!-- beach picture -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/majorca-beach-S">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-beach-M">
+        <source media="(min-width: 1264px)" srcset="images/majorca-beach-L">
+        <img src="images/majorca-beach-S.png" alt="landscape photograph of majorca beach">
+      </picture>
+
+      <!-- cove picture -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/majorca-cove-S">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-cove-M">
+        <source media="(min-width: 1264px)" srcset="images/majorca-cove-L">
+        <img src="images/majorca-cove-S.png" alt="landscape photograph of majorca cove">
+      </picture>
     </section>
     
     <!-- Plan Your Trip Section -->
@@ -91,26 +119,46 @@
       <h2>Testimonials</h2>
 
       <h3>Miranda Blake</h3>
-      <!-- Note: fix this img src to include m and l -->
-      <img src="images/miranda-blake-S.png" alt="">
+      <!-- miranda blade -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/miranda-blake-S.png">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/miranda-blake-M.png">
+        <source media="(min-width: 1264px)" srcset="images/miranda-blake-L.png">
+        <img src="images/miranda-blake-S.png" alt="profile picture of miranda blake">
+      </picture>
       <p>Traveling From: London, England</p>
       <p>"I traveled here for business, but my stay was extended. Now it is my home."</p>
 
       <h3>Max Winter</h3>
-      <!-- Note: fix this img src to include m and l -->
-      <img src="images/max-winter-S.png" alt="">
+      <!-- max winter -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/max-winter-S.png">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/max-winter-M.png">
+        <source media="(min-width: 1264px)" srcset="images/max-winter-L.png">
+        <img src="images/max-winter-S.png" alt="profile picture of max winter">
+      </picture>
       <p>Traveling From: Berlin,</p>
       <p>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</p>
 
       <h3>Inés Villegoes</h3>
-      <!-- Note: fix this img src to include m and l -->
-      <img src="images/ines-villegoes-S.png" alt="">
+      <!-- ines villegoes -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/ines-villegoes-S.png">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/ines-villegoes-M.png">
+        <source media="(min-width: 1264px)" srcset="images/ines-villegoes-L.png">
+        <img src="images/ines-villegoes-S.png" alt="profile picture of ines villegoes">
+      </picture>
       <p>Traveling From: Barcelona, Spain</p>
       <p>“A very safe environment for all travelers.”</p>
 
       <h3>Carmen Lorenzo</h3>
-      <!-- Note: fix this img src to include m and l -->
-      <img src="images/carmen-lorenzo-S.png" alt="">
+      <!-- carmen lorenzo -->
+      <picture>
+        <source media="(max-width: 675px)" srcset="images/carmen-lorenzo-S.png">
+        <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/carmen-lorenzo-M.png">
+        <source media="(min-width: 1264px)" srcset="images/carmen-lorenzo-L.png">
+        <img src="images/carmen-lorenzo-S.png" alt="profile picture of carmen lorenzo">
+      </picture>
       <p>Traveling From: Madrid, Spain</p>
       <p>"Live, laugh, love-- everything you need in Majorca."</p>
      </section>
@@ -161,23 +209,23 @@
       <!-- Contact Section -->
        <section id="contact">
         <h2>Contact Us</h2>
-        <form action="">
+        <form action="contact">
           <!-- First Name -->
           <label for="name1">First Name</label>
-				  <input type="name" id="name1" aria-required="true">
+				  <input type="text" id="name1" aria-required="true">
           <br>
           <!-- Last Name -->
           <label for="name2">Last Name</label>
-				  <input type="name" id="name2" aria-required="true">
+				  <input type="text" id="name2" aria-required="true">
           <br>
           <!-- Contact Method -->
           <fieldset>
             <legend>Preferred Contact Method</legend>
             <input id="phone" type="radio" name="contact" value="phone">
-            <label for="overnight">Phone</label>
+            <label for="phone">Phone</label>
             
-            <input id="email" type="radio" name="contact" value="email">
-            <label for="email">Email </label>
+            <input id="mail" type="radio" name="contact" value="email">
+            <label for="mail">Email </label>
           </fieldset>
           <br>
           <!-- Email Address -->
