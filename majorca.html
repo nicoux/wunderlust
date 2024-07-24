@@ -31,7 +31,14 @@
 
 Also review the alt text on all of the images to ensure that it is descriptive and appropriate-->
         <header>
-            <img src="images/logo.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun">
+            <picture>
+                <source media="(max-width: 675px)" srcset="images/logo-S.png">
+                <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/logo-M.png">
+                <source media="(min-width: 1264px)" srcset="images/logo-L.png">
+                <img src="images/logo-S.png" alt="Wunderlust logo with trees, waves of water and a sun">
+            </picture>
+            <!-- <img src="images/logo.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun"> -->
+            
             <h1>Wunderlust Travel</h1>
             <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
             <nav>
@@ -50,27 +57,27 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <!-- waves picture -->
                 <picture>
-                    <source media="(max-width: 675px)" srcset="images/majorca-waves-S">
-                    <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-waves-M">
-                    <source media="(min-width: 1264px)" srcset="images/majorca-waves-L">
+                    <source media="(max-width: 675px)" srcset="images/majorca-waves-S.png">
+                    <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-waves-M.png">
+                    <source media="(min-width: 1264px)" srcset="images/majorca-waves-L.png">
                     <img src="images/majorca-waves-S.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff">
                 </picture>
                 <!-- <img src="images/majorca-waves.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff"> -->
 
                 <!-- beach picture -->
                 <picture>
-                    <source media="(max-width: 675px)" srcset="images/majorca-beach-S">
-                    <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-beach-M">
-                    <source media="(min-width: 1264px)" srcset="images/majorca-beach-L">
+                    <source media="(max-width: 675px)" srcset="images/majorca-beach-S.png">
+                    <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-beach-M.png">
+                    <source media="(min-width: 1264px)" srcset="images/majorca-beach-L.png">
                     <img src="images/majorca-beach-S.png" alt="landscape photograph of majorca beach">
                 </picture>
                 <!-- <img src="images/majorca-beach.png" alt="beach"> -->
 
                 <!-- cove picture -->
                 <picture>
-                    <source media="(max-width: 675px)" srcset="images/majorca-cove-S">
-                    <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-cove-M">
-                    <source media="(min-width: 1264px)" srcset="images/majorca-cove-L">
+                    <source media="(max-width: 675px)" srcset="images/majorca-cove-S.png">
+                    <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/majorca-cove-M.png">
+                    <source media="(min-width: 1264px)" srcset="images/majorca-cove-L.png">
                     <img src="images/majorca-cove-S.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
                 </picture>
                 <!-- <img src="images/majorca-cove.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground"> -->
@@ -109,25 +116,53 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                 <section>
                     <h3>Testimonials</h3>
                     <section>
-                        <img src="images/mirando-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
-                        <h4>Amanda Blake</h4>
+                        <picture>
+                            <source media="(max-width: 675px)" srcset="images/miranda-blake-S.png">
+                            <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/miranda-blake-M.png">
+                            <source media="(min-width: 1264px)" srcset="images/miranda-blake-L.png">
+                            <img src="images/miranda-blake-S.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
+                        </picture>
+                        <!-- <img src="images/mirando-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses"> -->
+
+                        <h4>Miranda Blake</h4>
                         <p>Traveling From: London, England</p>
                         <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
                     </section>
                     <section>
-                        <img src="images/max-winter.png" alt="Max Winter">
+                        <picture>
+                            <source media="(max-width: 675px)" srcset="images/max-winter-S.png">
+                            <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/max-winter-M.png">
+                            <source media="(min-width: 1264px)" srcset="images/max-winter-L.png">
+                            <img src="images/max-winter-S.png" alt="Max Winter has short curly blonde hair, and wearing a brown button-up shirt">
+                        </picture>
+                        <!-- <img src="images/max-winter.png" alt="Max Winter"> -->
+
                         <h4>Max Winter</h4>
                         <p>Traveling From: Berlin, Germany</p>
                         <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
                     </section>
                     <section>
-                        <img src="images/ines-villegoes.png" alt="lady person">
-                        <h4>Inés Villegos</h4>
+                        <picture>
+                            <source media="(max-width: 675px)" srcset="images/ines-villegoes-S.png">
+                            <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/ines-villegoes-M.png">
+                            <source media="(min-width: 1264px)" srcset="images/ines-villegoes-L.png">
+                            <img src="images/ines-villegoes-S.png" alt="Inés Villegoes has long red hair and is wearing an officer uniform">
+                          </picture>
+                        <!-- <img src="images/ines-villegoes.png" alt="lady person"> -->
+                        
+                        <h4>Inés Villegoes</h4>
                         <p>Traveling From: Barcelona, Spain</p>
                         <q>A very safe environment for all travelers.</q>
                     </section>
                     <section>
-                        <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
+                        <picture>
+                            <source media="(max-width: 675px)" srcset="images/carmen-lorenzo-S.png">
+                            <source media="(min-width: 900px) and (max-width: 1263px)" srcset="images/carmen-lorenzo-M.png">
+                            <source media="(min-width: 1264px)" srcset="images/carmen-lorenzo-L.png">
+                            <img src="images/carmen-lorenzo-S.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
+                        </picture>
+                        <!-- <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings"> -->
+                        
                         <h4>Carmen Lorenzo</h4>
                         <p>Traveling From: Madrid, Spain</p>
                         <q>Live, laugh, love-- everything you need in Majorca.</q>
