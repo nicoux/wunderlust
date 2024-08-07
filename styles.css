@@ -105,3 +105,13 @@ h4 {
     font-size: 24px;
     font-weight: 800;
 }
+
+/* figuring out spacing */
+
+section {
+    padding: 16px;
+}
+
+div #intro {
+    padding: 16px;
+}
