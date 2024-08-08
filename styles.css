@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -63,7 +63,7 @@ h1, h2, h3 {
     --blue: #499BD2;
     --dark-gray: #222222;
     --light-gray: #EAEAEA;
-    --white: #FFFFFFf;
+    --white: #FFFFFF;
     --black: #000000;
 }
 
@@ -89,7 +89,7 @@ h1, h2, h3 {
 
 /* font sizes */
 
-h1 {
+h1 { 
     font-size: 40px;
 }
 
@@ -106,12 +106,163 @@ h4 {
     font-weight: 800;
 }
 
+/* header stuff + gradient */
+
+header {
+    background: linear-gradient(to bottom, var(--teal), var(--white));
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+header nav {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+header p {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
 /* figuring out spacing */
 
 section {
     padding: 16px;
 }
 
-div #intro {
+#intro {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* background colors */
+#plan {
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#about {
+    background: var(--blue);
+}
+
+/* flexing and gridding */
+#about div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 32px;
+}
+
+#testimonials div section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonials div section q {
+    font-style: italic;
+}
+
+/* plan section stuff */
+
+#plan div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--yellow);
+}
+
+#plan div section {
+    padding: 24px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--teal);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--white);
+}
+
+/* form code stuff */
+.form-required {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.required {
+    color: var(--purple);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contact form div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#contact form input {
+    padding: 12px;
+    border-color: var(--purple);
+    border-width: 2px;
+    font-family: Montserrat, sans-serif;
+}
+
+.custom-select select {
+    padding: 12px;
+    font-family: Montserrat, sans-serif;
+    border-color: var(--purple);
+    border-width: 2px;
+}
+
+#prefEmail, #prefText, #prefPhone {
+    width: 48px;
+    height: 48px;
+}
+
+#nums fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#nums fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#mySubmit {
+    background: var(--purple);
+    color: var(--white);
+    font-weight: 900;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+}
+
+/* footer stuff */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 16px 48px 16px;
+    background: var(--light-gray);
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
 }
